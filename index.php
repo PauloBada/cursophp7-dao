@@ -54,10 +54,17 @@ require_once("config.php");
 
 // ===== Altera usuário e/ou senha
 // Não se usou o construtor, pois antes precisa-se estar com o registro a ser alterado na memória
-$altera = new Usuario();
+// $altera = new Usuario();
+// $id = 28;
+// $altera->loadById($id);
+// $altera->update('CAMILLA PEDROZA TARRAGO JAQUES', 'tutasi199');
+// echo $altera;				
+
+// ===== Deleta usuário
+$deleta = new Usuario();
 $id = 28;
-$altera->loadById($id);
-$altera->update('CAMILLA PEDROZA TARRAGO JAQUES', 'tutasi99');
-echo $altera;				
+$deleta->loadById($id);
+$deleta->delete();
+echo $deleta;				
 
 ?>
